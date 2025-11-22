@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Basket ball score board</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <h3>HOME</h3>
+            <p id="point-el">0</p>
+            <button id="plus-1" onclick="plusOne()">+1</button>
+            <button id="plus-2" onclick="plusTwo()">+2</button>
+            <button id="plus-3" onclick="plusThree()">+3</button><br>
+            <button id="homesave-btn" onclick="saveOne()">SAVE</button>
+            <button id="home-foul" onclick="foulOne()">FOUL</button><br>
+            <p class="para">Fouls: <b id="foul-el">0</b></p>
+            <h2 id="home-save">Period: </h2>
+            
+        </div>
+        
+       
+        <div class="guest">
+            <h3>GUEST</h3>
+            <p id="points-el">0</p>
+            <button id="add-1" onclick="addOne()">+1</button>
+            <button id="add-2" onclick="addTwo()">+2</button>
+            <button id="add-3" onclick="addThree()">+3</button><br>
+            <button id="guestsave-btn" onclick="saveTwo()">SAVE</button>
+            <button id="guest-foul" onclick="foulTwo()">FOUL</button>
+            <p class="para">Fouls: <b id="fouls-el">0</b></p>
+            <h2 id="guest-save">Period: </h2>
+        </div>
+        
+    </div>
+    <button id="reset-btn" onclick="reset()">RESET</button>
+    <script src="index.js"></script>
+</body>
+</html>
